@@ -6,6 +6,7 @@ import org.apache.commons.math3.linear.MatrixUtils;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.junit.Test;
 
+import static org.nodexy.util.Utils.presentMatrix;
 import static org.nodexy.util.Utils.put;
 
 /**
@@ -28,9 +29,10 @@ public class MathTest extends TestCase {
                 B.setEntry(i,j,++x);
             }
         }
-        put("B = ",B);
+        put("B=\n",presentMatrix(B));
         RealMatrix C = A.multiply(B);
-        put("C = A*B = ", C);
-
+        put("C = A*B =\n", presentMatrix(C));
+        put("A.transpose()\n", presentMatrix(A.transpose()));
+        put("C.transpose()\n", presentMatrix(C.transpose()));
     }
 }

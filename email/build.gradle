@@ -1,0 +1,12 @@
+apply plugin : 'java'
+apply plugin : 'application'
+
+mainClassName = 'org.ngam.emailSender.EmailSender'
+
+repositories {
+	mavenCentral()
+}
+dependencies {
+	compile 'org.apache.commons:commons-email:1.4'
+	testCompile 'junit:junit:4.11'
+}

@@ -13,7 +13,6 @@ import static org.nodexy.util.Utils.put;
  * Created by phoenix on 11/7/16.
  */
 public class MathTest extends TestCase {
-    @Test
     public void test() {
         double[][] data = {{1,2}, {3,4}};
         RealMatrix A = MatrixUtils.createRealMatrix(data);

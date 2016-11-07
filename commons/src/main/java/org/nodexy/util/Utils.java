@@ -21,7 +21,7 @@ public class Utils {
             for (int c = 0; c < m.getColumnDimension(); ++c) {
                 sb.append(m.getEntry(r,c) + " ");
             }
-            sb.append("\n");
+            sb.append('\n');
         }
         return sb.toString();
     }
